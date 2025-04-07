@@ -1,4 +1,4 @@
-# EVMBytecodeSplitter
+EVMBytecodeSplitter
 EVM Bytecode Splitter - Solving the 24KB contract size limit
 
 https://github.com/Divide-By-0/ideas-for-projects-people-would-use
@@ -27,8 +27,8 @@ npm i
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 
-<h1><b>Project</b></h1>
-**URL**: https://lovable.dev/projects/b0475e15-3827-4d75-95c8-5c480ddc3061
+Project
+https://lovable.dev/projects/b0475e15-3827-4d75-95c8-5c480ddc3061
 
 This project is built with:
 
