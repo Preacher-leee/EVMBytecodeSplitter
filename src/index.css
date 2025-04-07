@@ -1,0 +1,89 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 142 70% 50%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 5.9% 10%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142 70% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 142 70% 50%;
+    --sidebar-primary-foreground: 240 5.9% 10%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 142 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Syntax highlighting for code samples */
+  .syntax-keyword {
+    @apply text-code-keyword;
+  }
+  
+  .syntax-function {
+    @apply text-code-function;
+  }
+  
+  .syntax-string {
+    @apply text-code-string;
+  }
+  
+  .syntax-number {
+    @apply text-code-number;
+  }
+  
+  .syntax-comment {
+    @apply text-code-comment;
+  }
+}
+
+@layer components {
+  .code-block {
+    @apply bg-code rounded-md p-4 font-mono text-sm overflow-auto;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 10px theme('colors.primary.DEFAULT'),
+                0 0 20px rgba(74, 222, 128, 0.2);
+  }
+}
